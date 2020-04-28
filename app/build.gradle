@@ -20,10 +20,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            res {
+                srcDirs 'src/main/res', 'src/main/res/layout/layout-land', 'src/main/res/layouts/portrait', 'src/main/res/layouts/landscape', 'src/main/res/layout-land/layout', 'src/main/res/layout-port/layout', 'src/main/res/layout/land'
+            }
+        }
+    }
 
 }
 
 dependencies {
+
+    def lifecycle_version = "1.1.1"
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'com.android.support:appcompat-v7:28.0.0'

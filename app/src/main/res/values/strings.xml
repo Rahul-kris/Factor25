@@ -6,5 +6,6 @@
     <string name="button_3" translatable="false">button_3</string>
     <string name="click" translatable="false">Click</string>
     <string name="display">Display</string>
-    <string name="refresh" translatable="false">Try_Again?</string>
+    <string name="refresh">Try_Again?</string>
+    <string name="saved_high_score_key" translatable="false">Best score</string>
 </resources>
